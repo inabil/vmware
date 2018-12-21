@@ -1,0 +1,29 @@
+Create Virtual Machine screen shot 
+
+# vim-cmd vmsvc/getallvms
+
+The snapshot related commands that the vmsvc/ namespace has available are:
+
+snapshot.create
+snapshot.dumpoption
+snapshot.get
+snapshot.remove
+snapshot.removeall
+snapshot.revert
+snapshot.setoption
+get.snapshotinfo
+
+
+Example ::::
+
+# vim-cmd vmsvc/snapshot.create 10 test
+
+
+where 10 is VM ID and "TEST" is the name of backup 
+
+
+
+++++++++++++++Backup VMDK File+++++++++++
+
+
+# vmkfstools -i /vmfs/volumes/Storage1/examplevm/examplevm.vmdk /vmfs/volumes/Storage2/examplevm_clone.vmdk
